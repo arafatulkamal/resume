@@ -2,415 +2,100 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arafat Ul Kamal | Finance & Accounts Professional</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arafat Ul Kamal | Finance & Accounts</title>
+<meta name="description" content="Arafat Ul Kamal — Finance & Accounts, Audit, Tax and Corporate Affairs professional.">
 <style>
-  @page { size: A4; margin: 0; }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: #eef1f5;
-    color: #263238;
-    font-family: "Segoe UI", Arial, sans-serif;
-    line-height: 1.45;
-  }
-  .resume {
-    width: 210mm;
-    min-height: 297mm;
-    margin: 24px auto;
-    background: #fff;
-    box-shadow: 0 8px 35px rgba(0,0,0,.12);
-    display: grid;
-    grid-template-columns: 34% 66%;
-  }
-  .sidebar {
-    background: #17324d;
-    color: #eef5fa;
-    padding: 34px 26px;
-  }
-  .main {
-    padding: 34px 34px 38px;
-  }
-  .name {
-    font-size: 30px;
-    line-height: 1.08;
-    font-weight: 800;
-    letter-spacing: .3px;
-    margin: 0 0 8px;
-  }
-  .role {
-    font-size: 13px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #a9d5ef;
-    font-weight: 700;
-    margin-bottom: 25px;
-  }
-  .contact {
-    font-size: 11.5px;
-    color: #dce8ef;
-  }
-  .contact div { margin: 9px 0; word-break: break-word; }
-  .contact a { color: #dce8ef; text-decoration: none; }
-  .side-section { margin-top: 28px; }
-  .side-title, .section-title {
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 12px;
-    font-weight: 800;
-  }
-  .side-title {
-    color: #a9d5ef;
-    padding-bottom: 8px;
-    border-bottom: 1px solid rgba(255,255,255,.22);
-    margin-bottom: 12px;
-  }
-  .skill {
-    font-size: 11.5px;
-    margin: 8px 0;
-    padding-left: 12px;
-    position: relative;
-  }
-  .skill:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #7fc5e8;
-  }
-  .cert {
-    font-size: 10.6px;
-    margin: 10px 0;
-    color: #dce8ef;
-  }
-  .main-header {
-    border-bottom: 2px solid #17324d;
-    padding-bottom: 17px;
-    margin-bottom: 22px;
-  }
-  .main-name {
-    font-size: 28px;
-    color: #17324d;
-    font-weight: 800;
-    margin: 0;
-  }
-  .headline {
-    color: #5b6b77;
-    font-size: 13px;
-    margin-top: 5px;
-  }
-  .section { margin-bottom: 24px; }
-  .section-title {
-    color: #17324d;
-    border-left: 4px solid #3b91bd;
-    padding-left: 9px;
-    margin-bottom: 15px;
-  }
-  .job {
-    position: relative;
-    margin-bottom: 20px;
-    padding-left: 0;
-  }
-  .job-top {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    align-items: baseline;
-  }
-  .job-title {
-    color: #17324d;
-    font-size: 14px;
-    font-weight: 800;
-  }
-  .date {
-    color: #6e7e89;
-    font-size: 10.5px;
-    white-space: nowrap;
-    font-weight: 700;
-  }
-  .company {
-    font-size: 11.5px;
-    color: #3b91bd;
-    font-weight: 700;
-    margin: 2px 0 7px;
-  }
-  ul {
-    margin: 5px 0 0 18px;
-    padding: 0;
-  }
-  li {
-    font-size: 10.7px;
-    margin: 5px 0;
-  }
-  .subhead {
-    font-size: 11px;
-    font-weight: 800;
-    color: #344b5b;
-    margin-top: 9px;
-  }
-  .education-item {
-    display: grid;
-    grid-template-columns: 105px 1fr;
-    gap: 10px;
-    margin: 10px 0;
-  }
-  .edu-date {
-    font-size: 10px;
-    color: #6e7e89;
-    font-weight: 700;
-  }
-  .degree {
-    font-size: 11.5px;
-    font-weight: 800;
-    color: #17324d;
-  }
-  .school {
-    font-size: 10.5px;
-    color: #596b77;
-  }
-  .two-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 22px;
-  }
-  .profile-box {
-    background: #f2f7fa;
-    border-left: 4px solid #3b91bd;
-    padding: 13px 15px;
-    font-size: 10.8px;
-    color: #41525d;
-  }
-  .reference {
-    font-size: 9.4px;
-    margin: 10px 0 14px;
-    color: #dce8ef;
-  }
-  .reference strong { color: #fff; }
-  .language {
-    font-size: 11px;
-    color: #dce8ef;
-  }
-  .declaration {
-    font-size: 9.5px;
-    color: #657680;
-    border-top: 1px solid #d9e0e5;
-    padding-top: 12px;
-    margin-top: 20px;
-  }
-  @media print {
-    body { background: #fff; }
-    .resume { margin: 0; box-shadow: none; }
-  }
-  @media (max-width: 900px) {
-    .resume { width: 100%; margin: 0; grid-template-columns: 1fr; }
-    .sidebar { padding: 25px; }
-    .main { padding: 25px; }
-  }
+:root{--bg:#07111f;--panel:#0d1b2d;--text:#eaf4ff;--muted:#8fa6bd;--accent:#29d3ff;--accent2:#7b61ff;--line:#1b3854}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.7 Inter,Segoe UI,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(41,211,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(41,211,255,.035) 1px,transparent 1px);background-size:45px 45px;z-index:-2}
+body:after{content:"";position:fixed;width:650px;height:650px;right:-280px;top:-180px;background:radial-gradient(circle,rgba(123,97,255,.24),transparent 65%);z-index:-1}
+a{color:inherit;text-decoration:none}.wrap{max-width:1180px;margin:auto;padding:0 25px}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.8);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navin{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;letter-spacing:2px}.logo span{color:var(--accent)}
+.links{display:flex;gap:24px;font-size:13px;color:var(--muted)}.links a:hover{color:var(--accent)}
+.hero{min-height:calc(100vh - 70px);display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:45px}
+.kicker{color:var(--accent);font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:12px}
+h1{font-size:clamp(46px,7vw,88px);line-height:.95;margin:14px 0 20px;letter-spacing:-4px}
+.gradient{background:linear-gradient(90deg,#fff,var(--accent),#9b8cff);-webkit-background-clip:text;color:transparent}
+.hero p{max-width:650px;color:var(--muted);font-size:17px}.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:12px 19px;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-weight:700;font-size:13px;transition:.2s}.btn.primary{background:var(--accent);color:#03101b;border-color:var(--accent)}.btn:hover{transform:translateY(-2px)}
+.hud{border:1px solid var(--line);background:linear-gradient(145deg,rgba(16,36,58,.92),rgba(9,22,37,.92));border-radius:20px;padding:22px;box-shadow:0 0 50px rgba(41,211,255,.08)}
+.hudtop{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1.5px}.dot{color:#51f6a1}
+.avatar{height:250px;border-radius:15px;margin:20px 0;background:radial-gradient(circle at 50% 35%,rgba(41,211,255,.3),transparent 30%),linear-gradient(135deg,#102b45,#091525);display:flex;align-items:center;justify-content:center;border:1px solid #214866}
+.initials{font-size:82px;font-weight:900;letter-spacing:-6px;color:#dff8ff;text-shadow:0 0 35px rgba(41,211,255,.4)}
+.statgrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.stat{padding:11px;background:#091727;border:1px solid var(--line);border-radius:10px}.stat b{display:block;color:var(--accent);font-size:17px}.stat small{color:var(--muted)}
+section{padding:95px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:30px}.sectionhead h2{margin:0;font-size:30px}.tag{color:var(--accent);font-size:11px;letter-spacing:2px;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:rgba(13,27,45,.72);border:1px solid var(--line);border-radius:16px;padding:22px;transition:.25s}.card:hover{border-color:#2a6584;box-shadow:0 10px 35px rgba(0,0,0,.18);transform:translateY(-3px)}.card h3{margin:0 0 4px}.card p,.card li{color:var(--muted);font-size:13px}.card ul{padding-left:18px}
+.timeline{border-left:1px solid #28506d;margin-left:9px}.job{position:relative;padding:0 0 30px 30px}.job:before{content:"";position:absolute;left:-5px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 15px var(--accent)}.job h3{margin:0}.company{color:var(--accent);font-size:13px;font-weight:700}.date{float:right;color:var(--muted);font-size:11px}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.skillrow{margin:12px 0}.skillrow .top{display:flex;justify-content:space-between;font-size:12px;color:#c8d8e5}.bar{height:7px;background:#091727;border-radius:9px;margin-top:7px;overflow:hidden}.bar i{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:9px}
+.edu{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}.edu .year{color:var(--accent);font-size:12px;font-weight:800}.edu h3{margin:0;font-size:15px}.edu p{margin:2px 0;color:var(--muted);font-size:13px}
+.certgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.cert{padding:17px;border:1px solid var(--line);border-radius:13px;background:#0b1929;color:#b8cad8;font-size:12px}
+.contactbox{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contactitem{padding:22px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}.contactitem small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;font-size:9px}.contactitem b{color:var(--accent)}
+footer{padding:35px 0;color:#61778b;border-top:1px solid var(--line);font-size:11px}
+@media(max-width:800px){.links{display:none}.hero{grid-template-columns:1fr;padding:60px 0}.grid,.skills,.contactbox{grid-template-columns:1fr}.certgrid{grid-template-columns:1fr 1fr}h1{letter-spacing:-2px}.date{float:none;display:block}.edu{grid-template-columns:1fr;gap:3px}}
+@media(max-width:500px){.certgrid{grid-template-columns:1fr}.wrap{padding:0 17px}}
 </style>
 </head>
 <body>
-<div class="resume">
+<nav><div class="wrap navin"><div class="logo">ARAFAT<span>.CV</span></div><div class="links"><a href="#about">ABOUT</a><a href="#experience">EXPERIENCE</a><a href="#skills">SKILLS</a><a href="#education">EDUCATION</a><a href="#contact">CONTACT</a></div></div></nav>
 
-  <aside class="sidebar">
-    <h1 class="name">ARAFAT<br>UL KAMAL</h1>
-    <div class="role">Finance &amp; Accounts Professional</div>
-
-    <div class="contact">
-      <div>📍 Kazir Dewri, Chattogram, Bangladesh</div>
-      <div>📞 +8801681-612849</div>
-      <div>✉ <a href="mailto:araf.hd@gmail.com">araf.hd@gmail.com</a></div>
-      <div>in <a href="https://www.linkedin.com/in/arafat-ul-kamal-86890711a" target="_blank">linkedin.com/in/arafat-ul-kamal-86890711a</a></div>
-    </div>
-
-    <div class="side-section">
-      <div class="side-title">Core Skills</div>
-      <div class="skill">Financial Reporting &amp; Analysis</div>
-      <div class="skill">Auditing &amp; Compliance</div>
-      <div class="skill">Corporate Affairs</div>
-      <div class="skill">Tax Preparation &amp; Filing</div>
-      <div class="skill">Financial Statement Preparation</div>
-      <div class="skill">Budgeting &amp; Forecasting</div>
-      <div class="skill">Strategic Financial Planning</div>
-      <div class="skill">Internal Controls &amp; Policies</div>
-    </div>
-
-    <div class="side-section">
-      <div class="side-title">Software</div>
-      <div class="skill">MS Word, Excel &amp; PowerPoint</div>
-      <div class="skill">Tally</div>
-      <div class="skill">Troyee Enterprise</div>
-      <div class="skill">QuickBooks</div>
-      <div class="skill">SAP</div>
-      <div class="skill">Oracle</div>
-      <div class="skill">Web Research &amp; Email Tools</div>
-    </div>
-
-    <div class="side-section">
-      <div class="side-title">Language</div>
-      <div class="language"><strong>English</strong><br>Native or Bilingual</div>
-    </div>
-
-    <div class="side-section">
-      <div class="side-title">References</div>
-      <div class="reference">
-        <strong>Mr. Showkat Hossain, FCA</strong><br>
-        Senior Partner, Hoda Vasi Chowdhury &amp; Co.<br>
-        Mobile: +8801819321732<br>
-        Email: showkat@hodavasi.com
-      </div>
-      <div class="reference">
-        <strong>Mr. Kamal Uddin Bhuiyan, BFM</strong><br>
-        DGM (Fire &amp; Safety), Safwan Bashundhara Global Headquarters, Dhaka<br>
-        Former Deputy Director (O&amp;M), Fire Service &amp; Civil Defence<br>
-        Mobile: +8801925876001<br>
-        Email: kub.fscd@gmail.com
-      </div>
-    </div>
-  </aside>
-
-  <main class="main">
-    <header class="main-header">
-      <h2 class="main-name">Arafat Ul Kamal</h2>
-      <div class="headline">Finance &amp; Accounts | Audit &amp; Assurance | Tax | Corporate Affairs</div>
-    </header>
-
-    <section class="section">
-      <div class="section-title">Professional Profile</div>
-      <div class="profile-box">
-        Finance and Accounts professional with hands-on experience in financial reporting,
-        audit and assurance, taxation, corporate governance, regulatory compliance, budgeting,
-        and internal controls. Experienced across manufacturing, food &amp; beverage, corporate
-        affairs, banking compliance, export-sector cash incentive audits, and leading corporate
-        organizations in Bangladesh.
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-title">Professional Experience</div>
-
-      <div class="job">
-        <div class="job-top">
-          <div class="job-title">Senior Executive – Finance &amp; Accounts</div>
-          <div class="date">05/2024 – Present</div>
-        </div>
-        <div class="company">Halda Valley Food &amp; Beverage Ltd. — Chittagong</div>
-        <ul>
-          <li>Delivered accurate monthly, quarterly, and annual financial statements; supported statutory and internal audits and ensured precise bank reconciliations.</li>
-          <li>Streamlined sales invoicing and strengthened collection reporting for improved revenue tracking.</li>
-          <li>Ensured timely submission of annual tax returns and maintained full regulatory compliance.</li>
-          <li>Executed diverse financial and reporting tasks to support management objectives.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-top">
-          <div class="job-title">Executive – Finance &amp; Accounts</div>
-          <div class="date">12/2022 – 04/2024</div>
-        </div>
-        <div class="company">Aramit Thai Aluminium Ltd. (Concern of Aramit Group of Companies) — Chittagong</div>
-        <ul>
-          <li>Prepared accurate monthly, quarterly, and annual financial statements and facilitated statutory and internal audits.</li>
-          <li>Administered annual tax returns and ensured full compliance with regulatory reporting requirements.</li>
-          <li>Drafted and recorded notices, agendas, and minutes for Board, Committee, and AGM meetings to support effective governance.</li>
-          <li>Executed additional reporting and management-assigned tasks with accuracy and timeliness.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-top">
-          <div class="job-title">Executive – Corporate Affairs</div>
-          <div class="date">06/2021 – 11/2022</div>
-        </div>
-        <div class="company">S. Alam Group — Chittagong</div>
-        <ul>
-          <li>Drafted notices, agendas, and minutes for Board, Committee, and AGM meetings to support effective corporate governance.</li>
-          <li>Ensured compliance with statutory and regulatory requirements including RJSC, BSEC, DSE, and CSE; prepared resolutions, filed statutory forms, and submitted returns within prescribed deadlines.</li>
-          <li>Managed share transactions, including issuance of shares, dividend distribution, shareholder communication, dividend warrants, bonus share certificates, and disposal of fractional shares.</li>
-          <li>Maintained statutory registers of members, directors, and directors’ interests and monitored compliance in dealings with company securities.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-top">
-          <div class="job-title">CA Articleship</div>
-          <div class="date">09/2017 – 03/2021</div>
-        </div>
-        <div class="company">Hoda Vasi Chowdhury &amp; Co., Chartered Accountants — Chittagong</div>
-        <div class="subhead">Audit &amp; Assurance Experience</div>
-        <div style="font-size:10.5px;color:#53646f;margin-top:4px;">
-          Worked under the direct supervision of Mr. Showkat Hossain, FCA — Former President of ICAB,
-          Senior Partner &amp; Acting Managing Partner.
-        </div>
-        <ul>
-          <li><strong>Statutory Audit:</strong> Jamuna Oil Company Limited; Meghna Petroleum Limited; LSL-TSL (concerns of Youngone Corporation Ltd.), CEPZ; The Chittagong Club Ltd.; Bhatiary Golf Course &amp; Country Club.</li>
-          <li><strong>Compliance Audit:</strong> Islami Bank Bangladesh Ltd. (Agrabad Branch); The City Bank Ltd. (Agrabad Branch).</li>
-          <li><strong>Fund Audit:</strong> Chittagong Knitters (Pvt.) Limited (Provident Fund); Meghna Petroleum Limited (Workers’ Profit Participation Fund).</li>
-          <li><strong>Stock Valuation &amp; Physical Verification:</strong> Berger Paints Bangladesh Ltd. (Factory, Kalurghat &amp; Sales Centre, Chatteshwari); Unilever Bangladesh Limited (Factory, Kalurghat &amp; Chattogram warehouses).</li>
-          <li><strong>INGO Audit:</strong> ActionAid International – Bangladesh; Bangladesh Institute of Theatre Arts (BITA); preparation of annual financial statements.</li>
-          <li><strong>Fixed Asset Verification &amp; Cost Assertion:</strong> KY Steel Division (KYCR Unit 01 &amp; 02, SAL, and KY Steel Ltd.).</li>
-          <li><strong>Cash Incentive Audit:</strong> Audited documents for Government Cash Incentive Facilities across RMG, textiles, fisheries, agro-processing, shipbuilding, leather &amp; footwear and other export sectors on behalf of HSBC, UCBL, The City Bank PLC, and Citibank N.A.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-title">Education</div>
-
-      <div class="education-item">
-        <div class="edu-date">06/2020 – 11/2021</div>
-        <div>
-          <div class="degree">MBA — Accounting</div>
-          <div class="school">Southern University Bangladesh — Chittagong | CGPA: 3.48 / 4.00</div>
-        </div>
-      </div>
-
-      <div class="education-item">
-        <div class="edu-date">11/2012 – 04/2017</div>
-        <div>
-          <div class="degree">BBA — Marketing</div>
-          <div class="school">International Islamic University Chittagong | CGPA: 2.948 / 4.00</div>
-        </div>
-      </div>
-
-      <div class="education-item">
-        <div class="edu-date">09/2010 – 06/2012</div>
-        <div>
-          <div class="degree">HSC — Business Studies</div>
-          <div class="school">Govt. City College — Chittagong | GPA: 4.50 / 5.00</div>
-        </div>
-      </div>
-
-      <div class="education-item">
-        <div class="edu-date">01/2009 – 05/2010</div>
-        <div>
-          <div class="degree">SSC — Business Studies</div>
-          <div class="school">Railway Public High School — Chittagong | GPA: 4.56 / 5.00</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-title">Professional Accomplishments &amp; Certifications</div>
-      <ul>
-        <li>Successfully passed the <strong>Assurance</strong> and <strong>Information Technology</strong> modules at Certificate Level from the Institute of Chartered Accountants of Bangladesh (ICAB).</li>
-        <li>Certified as an <strong>Income Tax Practitioner (ITP)</strong>, officially recognized by the National Board of Revenue (NBR), Government of Bangladesh.</li>
-        <li>IFRS 13 Fair Value Measurements — Deloitte Learning Academy.</li>
-        <li>Math Fundamentals for Capital Markets, Fundamentals of Credit, Forms of Business Structure, Introduction to Banking, Introduction to Corporate Finance, Excel Crash Course — Corporate Finance Institute.</li>
-        <li>Content Marketing, Inbound Marketing, Email Marketing and Social Media Certifications — HubSpot Academy.</li>
-        <li>Project Management — Robi 10 Minute School by a2i, ICT Division, Government of Bangladesh.</li>
-        <li>Microsoft Word Course — GCFLearnFree.org.</li>
-        <li>Fundamentals of Investment and Digital Security Essentials — a2i, ICT Division, UNDP, USAID.</li>
-        <li>The Fundamentals of Digital Marketing — Google Digital Garage.</li>
-        <li>Introduction to Data Studio, Google Analytics for Beginners, Google Tag Manager Fundamentals — Google Analytics Academy.</li>
-        <li>Child Protection Results-Based Management Resource Pack — UNICEF.</li>
-        <li>COVID-19 Operational Planning Guidelines and COVID-19 Partners Platform — WHO.</li>
-        <li>Community Level Volunteer Training Program — Bangladesh Fire Service &amp; Civil Defence Directorate in collaboration with CDMP, Ministry of Food and Disaster Management, Government of Bangladesh.</li>
-      </ul>
-    </section>
-
-    <div class="declaration">
-      <strong>Declaration:</strong> I, the undersigned, certify that the aforementioned information is correctly and accurately described.
-    </div>
-  </main>
+<header class="wrap hero">
+<div>
+<div class="kicker">Finance • Audit • Tax • Corporate Affairs</div>
+<h1>ARAFAT<br><span class="gradient">UL KAMAL</span></h1>
+<p>Finance &amp; Accounts professional with hands-on experience in financial reporting, audit &amp; assurance, taxation, corporate governance, regulatory compliance, budgeting and internal controls.</p>
+<div class="btns"><a class="btn primary" href="#experience">Explore Resume ↓</a><a class="btn" href="https://www.linkedin.com/in/arafat-ul-kamal-86890711a" target="_blank">LinkedIn ↗</a><a class="btn" href="mailto:araf.hd@gmail.com">Email Me</a></div>
 </div>
+<div class="hud"><div class="hudtop"><span>Professional profile</span><span class="dot">● Available</span></div><div class="avatar"><div class="initials">AK</div></div><div class="statgrid"><div class="stat"><b>ICAB</b><small>Certificate Level</small></div><div class="stat"><b>ITP</b><small>NBR Recognized</small></div><div class="stat"><b>Finance</b><small>Core Expertise</small></div><div class="stat"><b>Audit</b><small>Assurance</small></div></div></div>
+</header>
+
+<main>
+<section id="about"><div class="wrap"><div class="sectionhead"><h2>01 / About</h2><span class="tag">Profile</span></div><div class="grid"><div class="card"><h3>Professional Focus</h3><p>Experienced in financial statement preparation, audit support, tax return compliance, bank reconciliation, sales invoicing, collection reporting, corporate governance and statutory compliance.</p></div><div class="card"><h3>What I Bring</h3><p>Cross-industry experience spanning food &amp; beverage, aluminium manufacturing, corporate affairs, banking compliance, INGO audits, stock verification, fixed assets and government cash incentive audits.</p></div></div></div></section>
+
+<section id="experience"><div class="wrap"><div class="sectionhead"><h2>02 / Experience</h2><span class="tag">Career timeline</span></div><div class="timeline">
+<div class="job"><span class="date">05/2024 — Present</span><h3>Senior Executive – Finance &amp; Accounts</h3><div class="company">Halda Valley Food &amp; Beverage Ltd. — Chittagong</div><ul><li>Prepared monthly, quarterly and annual financial statements and supported statutory/internal audits.</li><li>Strengthened bank reconciliation, sales invoicing and collection reporting.</li><li>Ensured timely annual tax returns and regulatory compliance.</li></ul></div>
+<div class="job"><span class="date">12/2022 — 04/2024</span><h3>Executive – Finance &amp; Accounts</h3><div class="company">Aramit Thai Aluminium Ltd. — Aramit Group</div><ul><li>Prepared financial statements and facilitated statutory/internal audits.</li><li>Managed annual tax returns and regulatory reporting.</li><li>Prepared Board, Committee and AGM notices, agendas and minutes.</li></ul></div>
+<div class="job"><span class="date">06/2021 — 11/2022</span><h3>Executive – Corporate Affairs</h3><div class="company">S. Alam Group — Chittagong</div><ul><li>Managed RJSC, BSEC, DSE and CSE compliance, statutory forms and resolutions.</li><li>Handled share issuance, dividends, bonus shares, shareholder communication and statutory registers.</li></ul></div>
+<div class="job"><span class="date">09/2017 — 03/2021</span><h3>CA Articleship</h3><div class="company">Hoda Vasi Chowdhury &amp; Co., Chartered Accountants — Chittagong</div><ul><li>Statutory, compliance, fund, INGO and cash incentive audits.</li><li>Stock valuation/physical verification for Berger Paints and Unilever Bangladesh.</li><li>Fixed asset verification and cost assertion across industrial clients.</li></ul></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><div class="sectionhead"><h2>03 / Skills</h2><span class="tag">Core capabilities</span></div><div class="skills">
+<div class="card"><h3>Professional Skills</h3>
+<div class="skillrow"><div class="top"><span>Financial Reporting &amp; Analysis</span><span>95%</span></div><div class="bar"><i style="--w:95%"></i></div></div>
+<div class="skillrow"><div class="top"><span>Audit &amp; Compliance</span><span>94%</span></div><div class="bar"><i style="--w:94%"></i></div></div>
+<div class="skillrow"><div class="top"><span>Tax Preparation &amp; Filing</span><span>90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+<div class="skillrow"><div class="top"><span>Corporate Affairs</span><span>90%</span></div><div class="bar"><i style="--w:90%"></i></div></div></div>
+<div class="card"><h3>Software</h3><div class="certgrid" style="grid-template-columns:1fr 1fr;margin-top:15px"><div class="cert">MS Excel</div><div class="cert">MS Word</div><div class="cert">PowerPoint</div><div class="cert">QuickBooks</div><div class="cert">Tally</div><div class="cert">SAP</div><div class="cert">Oracle</div><div class="cert">Troyee Enterprise</div></div></div>
+</div></div></section>
+
+<section id="education"><div class="wrap"><div class="sectionhead"><h2>04 / Education</h2><span class="tag">Academic background</span></div>
+<div class="edu"><div class="year">06/2020 — 11/2021</div><div><h3>MBA — Accounting</h3><p>Southern University Bangladesh — Chittagong · CGPA 3.48 / 4.00</p></div></div>
+<div class="edu"><div class="year">11/2012 — 04/2017</div><div><h3>BBA — Marketing</h3><p>International Islamic University Chittagong · CGPA 2.948 / 4.00</p></div></div>
+<div class="edu"><div class="year">09/2010 — 06/2012</div><div><h3>HSC — Business Studies</h3><p>Govt. City College — Chittagong · GPA 4.50 / 5.00</p></div></div>
+<div class="edu"><div class="year">01/2009 — 05/2010</div><div><h3>SSC — Business Studies</h3><p>Railway Public High School — Chittagong · GPA 4.56 / 5.00</p></div></div>
+</div></section>
+
+<section><div class="wrap"><div class="sectionhead"><h2>05 / Credentials</h2><span class="tag">Selected certifications</span></div><div class="certgrid">
+<div class="cert"><b>ICAB</b><br>Assurance &amp; Information Technology — Certificate Level</div>
+<div class="cert"><b>NBR</b><br>Income Tax Practitioner (ITP)</div>
+<div class="cert"><b>Deloitte</b><br>IFRS 13 Fair Value Measurements</div>
+<div class="cert"><b>Corporate Finance Institute</b><br>Capital Markets, Credit, Banking, Corporate Finance &amp; Excel</div>
+<div class="cert"><b>HubSpot Academy</b><br>Content, Inbound, Email &amp; Social Media Marketing</div>
+<div class="cert"><b>Google</b><br>Digital Marketing, Analytics &amp; Tag Manager</div>
+<div class="cert"><b>UNICEF / WHO</b><br>Child Protection RBM &amp; COVID-19 operational planning</div>
+<div class="cert"><b>a2i / ICT Division</b><br>Project Management &amp; Digital Security Essentials</div>
+<div class="cert"><b>Fire Service &amp; Civil Defence</b><br>Community Level Volunteer Training</div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="sectionhead"><h2>06 / Contact</h2><span class="tag">Let's connect</span></div><div class="contactbox">
+<a class="contactitem" href="mailto:araf.hd@gmail.com"><small>Email</small><b>araf.hd@gmail.com</b></a>
+<div class="contactitem"><small>Phone</small><b>+8801681-612849</b></div>
+<div class="contactitem"><small>Location</small><b>Kazir Dewri, Chattogram, Bangladesh</b></div>
+<a class="contactitem" href="https://www.linkedin.com/in/arafat-ul-kamal-86890711a" target="_blank"><small>LinkedIn</small><b>View Professional Profile ↗</b></a>
+</div></div></section>
+</main>
+<footer><div class="wrap">© 2026 Arafat Ul Kamal · Finance &amp; Accounts Professional · Built for GitHub Pages</div></footer>
 </body>
 </html>
